@@ -1,6 +1,7 @@
 # cal Grammar
 
 - This grammar is checking lexical and syntax analysis of files and returning whether the files parsed correctly or not. 
+- It does this by overwriting the BaseErrorListener.java file and by halting the default error messages.
 - There are **6 files** that can be read. They start with a comment that shows whether they should parse or not.
 - We don't need a listener or visitor for this program:
 ```
