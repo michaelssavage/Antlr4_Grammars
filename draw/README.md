@@ -1,7 +1,7 @@
 # Draw Grammar
 
 - Make sure that the classpath points to antlr4 jar file.
-- generate antlr files in terminal by entering "antlr4 draw.g4"
+- generate antlr files in terminal by entering "antlr4 draw.g4 -no-listener -visitor"
 - compile generated antlr files with "javac *.java"
 - If all works, enter "java Draw"
 
