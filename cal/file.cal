@@ -1,0 +1,7 @@
+//this file should not parse
+
+MAInnnnnn
+beGin
+/* a comment /* with /* several */ nested */ comments */
+// a single line comment
+end

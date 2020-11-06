@@ -1,0 +1,11 @@
+//this file should parse
+
+void func () is
+begin
+    return ();
+end
+
+main
+begin
+    func ();
+end
