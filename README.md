@@ -24,3 +24,9 @@ antlr4-complete.jar;
 
 If using VSCode, the referenced libraries need to be set to the antlr jar also.
 
+## Folders and their difficulty
+
+1. hello.g4 is an introductory program to show the tokens.
+2. slp.g4 is good for viewing the gui.
+3. draw.g4 uses a java file and reads from a file.
+4. bp extends the BaseVisitor.java file and gives results back.
