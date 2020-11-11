@@ -18,8 +18,12 @@ The grun batch file can be used to show the parse tree:
 grun bp prog -gui file4.cal
 ```
 
-You can also use my batch file to check the 6 different files available.
-**Note: You will have to edit the cd so it points to the right directory for you.** :
+The Cal.java file can be run to test an input file also with a parsing message printed to System.out
+```
+java Cal file5.cal
+```
+
+You can also use my batch file to check the 6 different files available. :
 ```
 testcal.bat
 ```
