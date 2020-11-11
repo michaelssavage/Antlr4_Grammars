@@ -1,11 +1,11 @@
-//this file should parse
+//this file should not parse because of 0012
 
 variable i:integer;
 
 integer test_fn (x:integer) is
     variable i:integer;
 begin
-    i := 2;
+    i := 0012;
     return (x);
 end
 
