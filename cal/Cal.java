@@ -40,8 +40,8 @@ public class Cal
 		parser.prog ();
 		is.close();
 
-		//REPORT_SYNTAX_ERRORS is set to true in CalErrorListener by default.
-		if(CalErrorListener.REPORT_SYNTAX_ERRORS)
+		//NO_ERRORS is set to true in CalErrorListener by default.
+		if(CalErrorListener.getError())
 			System.out.println(inputFile+ " parsed successfully");
 		else
 			System.out.println(inputFile+ " has not parsed");
