@@ -1,4 +1,4 @@
-//this file should not parse
+//this file should not parse because of void void
 
 void void () is
 begin
