@@ -32,10 +32,12 @@ Date: **12/11/2020**
 
 For this assignment, I created a parser that took input from a file and outputted to the terminal whether or not a file was parsed successfully. I did this by reimplementing the BaseErrorListener.java file and creating my own error listener. I tested my parser with a really simple batch file. The testCal.bat file made things easy by testing the 6 different files in quick succession. 
 
-(images/figure1.png "Figure 1")
+![Figure 1](images/figure1.png "Figure 1")
+
 *Figure 1: batch file that generates, compiles and runs java files.*
 
-(images/figure2.png "Figure 2)
+![Figure 2](images/figure2.png "Figure 2")
+
 *Figure 2: Output from executing the batch file*
 
 ## Lexical Analysis
@@ -53,24 +55,28 @@ These are the simplest terminal tokens. They match certain characters or sequenc
 
 Numbers are handled by matching tokens or the literal ‘0’.  Numbers can start with the numbers from 1-9 and then be followed by any amount of  0-9 numbers shown with *. Integers cannot start with a zero unless it is ‘0’ on its own. Numbers can also start with an optional minus shown by ?.
 
-(images/figure3.png "Figure 3")
+![Figure 3](images/figure3.png "Figure 3")
+
 *Figure 3: Number Lexer Rule*
 
 **4.	Identifiers**
 
 IDs match terminal rules. The first character must be a letter followed by any amount of letters, underscores or integers. This choice is shown by using vertical bars. Again, reserved words will precede IDs. For example, ‘constant’ will match a reserved word and ‘constants’ will match an ID.
  
-(images/figure4.png "Figure 4")
+![Figure 4](images/figure4.png "Figure 4")
+
 *Figure 4: ID Lexer Rule*
 
-(images/figure5.png "Figure 5")
+![Figure 5](images/figure5.png "Figure 5")
+
 *Figure 5: Fragment rules for numbers and identifiers*
 
 **5.	Comments**
 
 There are two type of comments that are acceptable. Nested multi-line comments shown by /* … */ and single line comments starting with ‘//’. When these characters are read, they are discarded.
 
-(images/figure6.png "Figure 6")
+![Figure 6](images/figure6.png "Figure 6")
+
 *Figure 6: Multi-line comments and single-line comments*
 
 ## Syntax Analysis
@@ -81,7 +87,8 @@ Syntax analysis is needed to interpret the sequence of tokens and make sure it f
 
 One of the main syntax rules is the optionality of a non-terminal in places. The prog rules states that the arguments must be decl_list, function_list and main. Both decl_list and function_list can be empty by having a ? after the parse rule. This is shown in figure 7 below that decl_list can be empty and not be used.
 
-(images/figure7.png "Figure 7")
+![Figure 7](images/figure7.png "Figure 7")
+
 *Figure 7: file2.cal parse tree*
 
 **2.	Error Handling**
@@ -95,12 +102,14 @@ From this answer, I went back to the antlr4 source code to line 276 of TestPerfo
 
 https://github.com/antlr/antlr4/blob/98dc2c0f0249a67b797b151da3adf4ffbc1fd6a1/tool-testsuite/test/org/antlr/v4/test/tool/TestPerformance.java 
  
-(images/figure8.png "Figure 8")
+![Figure 8](images/figure8.png "Figure 8")
+
 *Figure 8: NO_ERRORS Boolean variable*
 
 Now, if there was an error in the parsing, the setter and getter methods will be used to get the value of the NO_ERRORS variable and print the relevant message. 
  
-(images/figure5.png "Figure 5")
+![Figure 9](images/figure9.png "Figure 9")
+
 *Figure 9: Setter and getter methods*
 
 ## Conclusion
